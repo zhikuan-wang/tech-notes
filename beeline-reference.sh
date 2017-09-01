@@ -8,3 +8,8 @@ PARTITIONED BY (`dt` string)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY '\u0001'
 LOCATION '/cdsh/cdsh_processed/MIDAS_FXACT'
 ;
+# Create hive managed table
+CREATE TABLE IF NOT EXISTS `Bcustlist` (
+    `RELATIONSHIPNO` string
+);
+load data inpath '/cdsh/Bcustlist/Bcustlist.csv' into table Bcustlist;
