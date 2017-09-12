@@ -12,7 +12,7 @@ hdfs dfs -getfacl /cdsh
 # 1, change umask to 002 and restart cluster.
 hive-site.xml
 <name>fs.permissions.umask-mode</name>
-<value>006</value>
+<value>002</value>
 # 2, Change ACL
 hdfs dfs -setfacl -m -R default:user:hive:rwx /cdsh
 hdfs dfs -setfacl -m -R default:other::r-x /cdsh
