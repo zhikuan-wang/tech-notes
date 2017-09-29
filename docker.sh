@@ -28,3 +28,19 @@ RUN apt-get install -y nginx
 COPY index.html /var/www/html
 ENTRYPOINT ["usr/sbin/nginx", "-g", "daemon off;"]
 EXPOSE 80
+
+docker run -d -name nginx -v /usr/share/nginx/html nginx
+docker inspect nginx
+docker exec -it nginx /bin/bash
+docker run -p 80:80 -d -v $PWD/html:/usr/share/nginx/html nginx
+
+docker create -v $PWD/data:/var/mydata --name data_container ubuntu
+docker run -it --volumes-from data_container ubuntu /bin/bash
+docker tag docker/whalesay steven/whalesay
+docker push steven/whalesay
+docker login
+
+docker-compose up -d
+docker-compose stop
+docker-compose rm
+docker-compose build
