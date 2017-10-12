@@ -10,3 +10,6 @@ resize2fs -p /dev/mapper/rootvg-appsvol
 python -m SimpleHTTPServer
 # Python 3.x
 python -m  http.server 8000
+
+# Generate Java Core Dump
+jstack -l -F 136792 > 136792.out
