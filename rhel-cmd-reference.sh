@@ -29,10 +29,12 @@ Passphrase: EDMpCN
 %commit
 %echo done
 
-#Generate key
+# Generate key
 gpg --batch --gen-key EDMpCN
 gpg --list-key
 gpg -armor --export StevenZhikuan.Wang@sc.com > EDMpCN.pub
 gpg --import EDMpCN.pub
+# Encryption
 gpg --yes --always-trust --output 1.sql.gpg --encrypt --recipient StevenZhikuan.Wang@sc.com 1.sql
+# Decryption
 gpg --batch --yes --passphrase EDMpCN -o 1.sql --decrypt 1.sql.gpg
