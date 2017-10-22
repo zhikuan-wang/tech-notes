@@ -45,5 +45,5 @@ docker-compose stop
 docker-compose rm
 docker-compose build
 
-docker run --name mysql -v C:\Users\Steven\Desktop\docker\mysql\data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=VTPhz8Gj --net=host -p 3306:3306 -d mysql:5.7.15
+docker run --name mysql -v C:\Users\Steven\Desktop\docker\mysql\data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=VTPhz8Gj -p 3306:3306 -d mysql:5.7.15
 docker exec -it mysql mysql
