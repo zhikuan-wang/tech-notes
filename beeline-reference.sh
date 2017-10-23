@@ -13,3 +13,6 @@ CREATE TABLE IF NOT EXISTS `Bcustlist` (
     `RELATIONSHIPNO` string
 );
 load data inpath '/cdsh/Bcustlist/Bcustlist.csv' into table Bcustlist;
+
+# Describe table
+desc formatted EBBS_FX_RATE;
