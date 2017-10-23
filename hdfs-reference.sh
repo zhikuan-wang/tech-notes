@@ -18,3 +18,6 @@ hdfs dfs -setfacl -m -R default:user:hive:rwx /cdsh
 hdfs dfs -setfacl -m -R default:other::r-x /cdsh
 hdfs dfs -setfacl -m -R user:hive:rwx /cdsh
 hdfs dfs -chmod -R 775 /cdsh
+
+# File copy
+sudo su hdfs -c "hdfs dfs -cp /cdsh/cdsh_processed/ebbs_FX_RATE/20170929/part-r--m-00000.gz /cdsh/cdsh_processed/ebbs_FX_RATE/20170930/part-r--m-00000.gz"
