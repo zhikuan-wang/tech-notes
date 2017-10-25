@@ -38,3 +38,12 @@ gpg --import EDMpCN.pub
 gpg --yes --always-trust --output 1.sql.gpg --encrypt --recipient StevenZhikuan.Wang@sc.com 1.sql
 # Decryption
 gpg --batch --yes --passphrase EDMpCN -o 1.sql --decrypt 1.sql.gpg
+
+# Add LV
+sudo vgs
+sudo lvs
+sudo lvcreate -L 100G -n rootvg-appvol rootvg
+sudo mkfs.ext4 /dev/rootvg/rootvg-appvol
+sudo mount /dev/rootvg/rootvg-appvol /apps
+sudo vi /etc/fstab
+/dev/mapper/rootvg-rootvg--appvol /apps ext4 noatime,nodiratime 1 2
