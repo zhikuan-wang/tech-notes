@@ -25,3 +25,12 @@ desc formatted EBBS_FX_RATE;
 +-----------+--+
 1 row selected (0.087 seconds)
 0: jdbc:hive2://10.27.238.61:10000>
+
+0: jdbc:hive2://10.27.238.61:10000> select from_unixtime(unix_timestamp('01/01/2017 00:00:00', 'dd/MM/yyyy hh:mm:ss'), 'yyyyMMdd');
++-----------+--+
+|    _c0    |
++-----------+--+
+| 20170101  |
++-----------+--+
+1 row selected (0.181 seconds)
+0: jdbc:hive2://10.27.238.61:10000>
