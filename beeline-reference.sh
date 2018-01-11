@@ -34,3 +34,39 @@ desc formatted EBBS_FX_RATE;
 +-----------+--+
 1 row selected (0.181 seconds)
 0: jdbc:hive2://10.27.238.61:10000>
+
+0: jdbc:hive2://10.27.238.61:10000> select * from tbl_test;
++---------------+----------------+----------------+----------------+--+
+| tbl_test.key  | tbl_test.col1  | tbl_test.col2  | tbl_test.col3  |
++---------------+----------------+----------------+----------------+--+
+| 001           | jack           | NULL           | NULL           |
+| 001           | NULL           | steven         | tom            |
+| 001           | jack           | jim            | NULL           |
+| 002           | jack           | jim            | lili           |
++---------------+----------------+----------------+----------------+--+
+4 rows selected (0.077 seconds)
+0: jdbc:hive2://10.27.238.61:10000> select distinct key, value from tbl_test lateral view explode(array(col1, col2, col3)) tbl as value where value is not null;
+INFO  : Session is already open
+INFO  : Dag name: select distinct key, value from tbl_t...null(Stage-1)
+INFO  :
+
+INFO  : Status: Running (Executing on YARN cluster with App id application_1510707629210_0501)
+
+INFO  : Map 1: 0/1      Reducer 2: 0/1
+INFO  : Map 1: 0(+1)/1  Reducer 2: 0/1
+INFO  : Map 1: 1/1      Reducer 2: 0/1
+INFO  : Map 1: 1/1      Reducer 2: 0(+1)/1
+INFO  : Map 1: 1/1      Reducer 2: 1/1
++------+---------+--+
+| key  |  value  |
++------+---------+--+
+| 001  | jack    |
+| 001  | jim     |
+| 001  | steven  |
+| 001  | tom     |
+| 002  | jack    |
+| 002  | jim     |
+| 002  | lili    |
++------+---------+--+
+7 rows selected (1.994 seconds)
+0: jdbc:hive2://10.27.238.61:10000>
