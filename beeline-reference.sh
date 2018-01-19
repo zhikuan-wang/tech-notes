@@ -71,11 +71,11 @@ INFO  : Map 1: 1/1      Reducer 2: 1/1
 7 rows selected (1.994 seconds)
 0: jdbc:hive2://10.27.238.61:10000>
 
-0: jdbc:hive2://10.27.238.61:10000/cnedmp> select 'test', reflect("org.apache.commons.codec.digest.DigestUtils", "sha256Hex", 'test');
+beeline> select 'test', reflect("org.apache.commons.codec.digest.DigestUtils", "sha256Hex", 'test');
 +-------+-------------------------------------------------------------------+--+
 |  _c0  |                                _c1                                |
 +-------+-------------------------------------------------------------------+--+
 | test  | 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08  |
 +-------+-------------------------------------------------------------------+--+
 1 row selected (0.092 seconds)
-0: jdbc:hive2://10.27.238.61:10000/cnedmp>
+beeline>
