@@ -39,6 +39,10 @@ gpg --yes --always-trust --output 1.sql.gpg --encrypt --recipient StevenZhikuan.
 # Decryption
 gpg --batch --yes --passphrase EDMpCN -o 1.sql --decrypt 1.sql.gpg
 
+# Fix key issue
+gpg --export-secret-keys > EDMpCN
+gpg --allow-secret-key-import --import EDMpCN
+
 # Add LV
 sudo vgs
 sudo lvs
