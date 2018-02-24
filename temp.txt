@@ -1,2 +1,3 @@
 http://www.cnblogs.com/honeybee/p/7592774.html
 https://u246655.ct.sendgrid.net/wf/click?upn=RjtrEk9k93MBTVkvmvabHTYp6eZxWL-2BmyDCZaN4-2FneWlShU5ryqb8gfsQrgKIFbXUnzf5Keojo4tkUo8H5rkwVLsP-2FeflZelhdxy6IVR7Pc-3D_mSmPH8rKtKnNviZeKAYpz9drIt-2BmcMA8VeB-2FZr6OL2O7GNuRA0QEcU2aOP6JtBe1C3sHblrb10ILXT-2BdkAiPBUQ77YTNpeiIWJsjHBK3bGyFgyvFNpN8G27q45UyGWfqIFECpdd4C9lWHk6qbiOxO-2BFsFFUOy4ks2Z9PnPiQYKBT2eHuO8upmxWiqUn5-2Fv0xvNU55y9IkUQeJGwKsgAvlOldPq5se0YMBu8Bg2ooeLQ-3D
+https://s3-us-west-2.amazonaws.com/kylo-io/releases/rpm/0.9.0/kylo-0.9.0.rpm
