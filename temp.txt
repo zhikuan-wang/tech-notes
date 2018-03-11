@@ -4,3 +4,4 @@ https://s3-us-west-2.amazonaws.com/kylo-io/releases/rpm/0.9.0/kylo-0.9.0.rpm
 https://services.gradle.org/distributions/gradle-2.13-all.zip
 https://raw.githubusercontent.com/hortonworks/data-tutorials/master/tutorials/hdp/sandbox-deployment-and-install-guide/assets/start_sandbox-hdp.sh
 ./mkdistro.sh -Phadoop-2 -Dhadoop.auth.version=2.7.3 -Ddistcp.version=2.7.3 -Dsqoop.version=1.4.6 -Dhive.version=1.2.1 -Dpig.version=0.16.0 -Dspark.version=2.1.1 -DskipTests  -Dmaven.javadoc.skip=true
+http://blog.csdn.net/u014729236/article/details/47188631/
