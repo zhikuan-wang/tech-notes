@@ -6,3 +6,4 @@ https://raw.githubusercontent.com/hortonworks/data-tutorials/master/tutorials/hd
 ./mkdistro.sh -Phadoop-2 -Dhadoop.auth.version=2.7.3 -Ddistcp.version=2.7.3 -Dsqoop.version=1.4.6 -Dhive.version=1.2.1 -Dpig.version=0.16.0 -Dspark.version=2.1.1 -DskipTests  -Dmaven.javadoc.skip=true
 http://blog.csdn.net/u014729236/article/details/47188631/
 https://www.toutiao.com/i6534544827881619975/?tt_from=weixin&utm_campaign=client_share&from=groupmessage&timestamp=1521586451&app=news_article&utm_source=weixin&isappinstalled=0&iid=28066244912&utm_medium=toutiao_android&wxshare_count=2&pbid=6535165119362024968
+https://github.com/ethereum/wiki/blob/master/%5B中文%5D-以太坊白皮书.md
