@@ -7,3 +7,4 @@ https://raw.githubusercontent.com/hortonworks/data-tutorials/master/tutorials/hd
 http://blog.csdn.net/u014729236/article/details/47188631/
 https://www.toutiao.com/i6534544827881619975/?tt_from=weixin&utm_campaign=client_share&from=groupmessage&timestamp=1521586451&app=news_article&utm_source=weixin&isappinstalled=0&iid=28066244912&utm_medium=toutiao_android&wxshare_count=2&pbid=6535165119362024968
 https://github.com/ethereum/wiki/blob/master/%5B中文%5D-以太坊白皮书.md
+http://www.meiriyouke.net/?p=82
