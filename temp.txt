@@ -11,3 +11,4 @@ http://www.meiriyouke.net/?p=82
 http://truffleframework.com/tutorials/pet-shop
 https://github.com/FRosner/drunken-data-quality
 https://github.com/pranab/chombo
+https://github.com/agile-lab-dev/DataQuality
