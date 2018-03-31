@@ -9,3 +9,4 @@ https://www.toutiao.com/i6534544827881619975/?tt_from=weixin&utm_campaign=client
 https://github.com/ethereum/wiki/blob/master/%5B中文%5D-以太坊白皮书.md
 http://www.meiriyouke.net/?p=82
 http://truffleframework.com/tutorials/pet-shop
+https://github.com/FRosner/drunken-data-quality
