@@ -13,3 +13,4 @@ https://github.com/FRosner/drunken-data-quality
 https://github.com/pranab/chombo
 https://github.com/agile-lab-dev/DataQuality
 https://learnblockchain.cn/2017/11/24/init-env/
+https://github.com/baifanwudi/kafka-hbase
